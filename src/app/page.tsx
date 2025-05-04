@@ -1,18 +1,19 @@
 import Image from "next/image";
 
 
+// src/app/page.tsx
 export default function HomePage() {
   return (
-      <main className="text-center p-10">
-        <h1 className="text-4xl font-bold">Hi, I’m Toan Le</h1>
-        <p className="mt-4 text-lg">
-          Welcome to my site! I’m a developer, tech enthusiast, and builder.
-        </p>
-        <nav className="mt-6">
-          <a href="/about" className="mr-4 text-blue-500">About Me</a>
-          <a href="/contact" className="text-blue-500">Contact</a>
-        </nav>
-      </main>
+    <div className="hero min-h-[60vh] bg-base-200">
+      <div className="hero-content text-center">
+        <div>
+          <h1 className="text-5xl font-bold">Hi, I’m Toan Le</h1>
+          <p className="py-6 max-w-lg">
+            Senior CS Student @ CSULB — Web & Cybersecurity enthusiast.
+          </p>
+          <a href="/about" className="btn btn-primary">Learn More About Me</a>
+        </div>
+      </div>
+    </div>
   );
 }
-

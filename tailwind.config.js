@@ -1,7 +1,15 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx}", // make sure it matches your folder structure
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("daisyui"),
+  ],
+  daisyui: {
+    themes: ["corporate","dracula","garden"], // pick your favorite
+  },
 };
