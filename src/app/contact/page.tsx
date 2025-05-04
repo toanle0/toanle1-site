@@ -2,7 +2,15 @@ export default function ContactPage() {
     return (
         <main className="min-h-screen flex flex-col items-center justify-center p-8">
             <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
-            <p className="mb-4 text-lg">You can reach me securely using my ProtonMail PGP public key:</p>
+            <p className="mb-2 text-lg">
+                Email me at:{" "}
+                <a href="mailto:toanle1@protonmail.com" className="text-blue-500 underline">
+                    toanle1@protonmail.com
+                </a>
+            </p>
+            <p className="mb-4 text-sm text-gray-500">
+                (You can encrypt your messages with the public PGP key below)
+            </p>
             <pre className="bg-gray-900 text-green-400 p-4 rounded text-sm overflow-x-auto max-w-full">
 {`-----BEGIN PGP PUBLIC KEY BLOCK-----
 
