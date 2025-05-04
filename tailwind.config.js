@@ -1,15 +1,27 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: [
-    "./src/app/**/*.{js,ts,jsx,tsx}", // make sure it matches your folder structure
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#1E40AF",
+        accent:  "#F43F5E",
+      },
+      fontFamily: {
+        sans: ["var(--font-roboto)", "ui-sans-serif", "system-ui"],
+      },
+    },
   },
-  plugins: [
-    require("daisyui"),
-  ],
+  plugins: [require("daisyui")],
   daisyui: {
-    themes: ["corporate","dracula","garden"], // pick your favorite
+    themes: [
+      {
+        light: {
+          "primary": "#1E40AF",
+          "secondary": "#F43F5E",
+          "base-100": "#FFFFFF",
+        },
+      },
+    ],
   },
 };
