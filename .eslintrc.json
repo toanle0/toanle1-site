@@ -17,6 +17,8 @@
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    // any Prettier‐specific overrides:
+    "prettier/prettier": ["error"]
   }
 }
