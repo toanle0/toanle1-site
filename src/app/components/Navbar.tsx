@@ -1,7 +1,7 @@
 // src/app/components/Navbar.tsx
 "use client"
 
-import { Home, File, Globe } from "lucide-react"
+import { Home, File, Globe, Folder } from "lucide-react"
 
 export function Navbar() {
   return (
@@ -16,6 +16,12 @@ export function Navbar() {
         <a href="/about">
           <File className="inline-block w-5 h-5 mr-1 align-text-bottom" />
           About Me
+        </a>
+      </li>
+      <li>
+        <a href="/projects">
+          <Folder className="inline-block w-5 h-5 mr-1 align-text-bottom" />
+          Projects
         </a>
       </li>
       <li>
