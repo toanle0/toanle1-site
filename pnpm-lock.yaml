@@ -23,6 +23,9 @@ importers:
       next:
         specifier: 15.3.1
         version: 15.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      next-rate-limit:
+        specifier: ^0.0.3
+        version: 0.0.3(next@15.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
       openai:
         specifier: ^5.10.2
         version: 5.10.2(zod@3.24.3)
@@ -1561,6 +1564,11 @@ packages:
 
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
+
+  next-rate-limit@0.0.3:
+    resolution: {integrity: sha512-2VYgvxs1Mh1u4JGaxGu+dyNHUlpGOniCagZoQcqcTlsQS4OVQ4Dh3SU0mFlG2P1X2VlDN1lrjPpnaybFaGesbQ==}
+    peerDependencies:
+      next: '>=13.0.0'
 
   next@15.3.1:
     resolution: {integrity: sha512-8+dDV0xNLOgHlyBxP1GwHGVaNXsmp+2NhZEYrXr24GWLHtt27YrBPbPuHvzlhi7kZNYjeJNR93IF5zfFu5UL0g==}
@@ -3807,6 +3815,11 @@ snapshots:
   napi-postinstall@0.2.3: {}
 
   natural-compare@1.4.0: {}
+
+  next-rate-limit@0.0.3(next@15.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)):
+    dependencies:
+      lru-cache: 10.4.3
+      next: 15.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   next@15.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
