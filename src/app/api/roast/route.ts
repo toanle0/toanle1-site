@@ -15,13 +15,16 @@ const limiter = rateLimit({
 export async function POST(req: NextRequest) {
   try {
     // Rate limit check
-    await limiter.check(req, 5, 'ROAST_API_TOKEN');
+    limiter.checkNext(req, 5);
 
     const { resume } = await req.json();
 
     // Basic abuse protection
     if (!resume || resume.length > 4000) {
-      return NextResponse.json({ result: 'Invalid resume. Must be under 4000 characters.' }, { status: 400 });
+      return NextResponse.json(
+        { result: 'Invalid resume. Must be under 4000 characters.' },
+        { status: 400 }
+      );
     }
 
     const prompt = `
